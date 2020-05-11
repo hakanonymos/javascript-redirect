@@ -1,25 +1,18 @@
 {
   "manifest_version": 2,
-  "name": "simple Screenshot",
-  "description": "Just 1 click ,screenshot",
+  "name": "simple redirect",
+  "description": "redirect javascript",
   "version": "1.1.0",
   "browser_action": {
     "default_icon": "icon2.png",
-    "default_title": "Quickly Screenshot ",
+    "default_title": "redirect javascript ",
     "default_popup" : "popup.html"
   },
-    "content_scripts": [ {
-      "js": ["js/jquery-3.1.1.js","js/screen.js"],
-    "all_frames": true,
-      "matches": [ "\u003Call_urls>" ]
-   } ],
   "background": {
   "scripts": ["background.js"],
    "persistent": true
   },
   "permissions": [
-    "tabs",
-    "<all_urls>",
-    "downloads"
+    "tabs"
   ]
 }
